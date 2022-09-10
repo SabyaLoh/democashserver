@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const authRouter = require('./routes/auth');
 
 //init
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const app = express();
 const DB = "mongodb+srv://Misha:g81JMabvva39gGmU@cluster0.6btat.mongodb.net/?retryWrites=true&w=majority"
 //midleware
